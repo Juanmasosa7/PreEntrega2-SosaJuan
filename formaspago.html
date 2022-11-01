@@ -57,48 +57,126 @@
   </header>
   <!-- Fin Header -->
 
-  <section id="ultima">
-    <h2 class="titulo-precios">Precios de nuestros productos</h2>
-
-    <main>
-      <section class="section">
-        <h2 class="precios">TAZAS</h2>
-        <ul>
-          <li class="dinero"><span>$1500</span></li>
-          <li>450cc</li>
-          <li>Envio: $200</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 class="precios">TAZONES</h2>
-        <ul>
-          <li class="dinero"><span>$1700</span></li>
-          <li>550cc</li>
-          <li>Envio: $200</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 class="precios">PLATITOS</h2>
-        <ul>
-          <li class="dinero"><span>$1200</span></li>
-          <li>15cm x 15 cm</li>
-          <li>Envio: $200</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 class="precios">CAJITAS</h2>
-        <ul>
-          <li class="dinero"><span>$2000</span></li>
-          <li>Una taza a eleccion y golosinas!</li>
-          <li>Envio: $200</li>
-        </ul>
-      </section>
-    </main>
-
+  <br>
+  <section>
+    <h2>Formulario para comprar</h2>
   </section>
+  <br>
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="validationCustom02" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Gmail</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Por favor ingresa Gmail.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Provincia</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija.</option>
+        <option>Buenos Aires</option>
+        <option>CABA</option>
+        <option>Entre Rios</option>
+        <option>Corrientes</option>
+        <option>Misiones</option>
+        <option>Formosa</option>
+        <option>Chaco</option>
+        <option>Salta</option>
+        <option>Jujuy</option>
+        <option>Santiago del Estero</option>
+        <option>Tucuman</option>
+        <option>Catamarca</option>
+        <option>La Rioja</option>
+        <option>Santa Fe</option>
+        <option>Cordoba</option>
+        <option>San Juan</option>
+        <option>San Luis</option>
+        <option>Mendoza</option>
+        <option>La Pampa</option>
+        <option>Neuquen</option>
+        <option>Rio Negro</option>
+        <option>Chubut</option>
+        <option>Santa Cruz</option>
+        <option>Tierra del Fuego</option>
+      </select>
+      <div class="invalid-feedback">
+        Por favor elija Provincia
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Codigo Postal</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Por favor elija el codigo postal.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Producto que desea</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija.</option>
+        <option>Taza</option>
+        <option>Tazon</option>
+        <option>Cajita</option>
+        <option>Platito</option>
+        <option>Otro (Especificar mas adelante, en caso de queres comprar 2 o mas productos diferentes)</option>
+      </select>
+      <div class="invalid-feedback">
+        Complete por favor.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Cantidad de Unidades</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>Otro (Especificar mas adelante)</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Especificaciones (Escriba el dibujo que quiere de su producto y cantidad en caso de ser necesario)</label>
+      <input type="text" class="form-control" id="validationCustom02" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Acepto los términos y condiciones
+        </label>
+        <div class="invalid-feedback">
+          Debe estar de acuerdo antes de enviar.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </form>
 
   <footer>
     <img class="logo-footer" src="Imagenes/Melaquitas principal aaaaa.jpg" alt="foto logo">
