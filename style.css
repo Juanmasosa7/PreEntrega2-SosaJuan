@@ -28,9 +28,9 @@ li{font-size: 1.25em;}
 ul li{
     list-style-type: none;
     text-align: center;
-    border-bottom: 1px solid #000;
     padding: 20px;
     font-size: 18px;
+    text-decoration: none;
 }
 
 button{
@@ -62,7 +62,7 @@ button{
 
 
 header ul li{
-    border-bottom:none
+    border-bottom: none
 }
 
 .navbar-brandd {
@@ -77,10 +77,10 @@ header ul li{
 }
 
 .imglogo{
-height: 80px;
-margin-left: 25px;
-border-radius: 40px;
- }
+    height: 80px;
+    margin-left: 25px;
+    border-radius: 40px;
+}
 
 
 header a{
@@ -127,6 +127,13 @@ header a:hover{
     text-shadow: 0 0 8px rgba(0,0,0,0.8);
 }
 
+#productos{
+    margin: 0;
+    margin-bottom: 70px;
+    outline: none;
+    display: block;
+}
+
 
 #cuidado{
     background-color: #fbf7f7;
@@ -149,7 +156,7 @@ header a:hover{
     height: 100%;
 } */
 
-/* otra */
+/* contactos.html */
 #contactos{
     text-align: center;
     background-color: #fbf7f7;
@@ -160,9 +167,13 @@ header a:hover{
 }
 
 .redes{
-    padding:20px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
+.redess{
+    margin: 30px;
+}
 
 body{
     background-color: #f1f1f1;
@@ -189,6 +200,8 @@ body{
     transition: transform 0.3s ease-in-out;
 
 }
+
+
 
 .grid-item:hover{
     filter: opacity(0.9);
@@ -254,7 +267,6 @@ footer{
     margin: 1rem;
     background-position: center;
     background-size: 40%;
-    border: 2px solid #fbf7f7;
     float: left;
     background-repeat: no-repeat;
 }
@@ -275,12 +287,13 @@ footer{
     margin: 1rem 1.5rem;
     cursor: pointer;
     opacity: 0.8;
-    color: rgb(165, 83, 207);
+    color: rgb(0, 0, 0);
 }
 
 .menu-items:hover{
     opacity: 1;
 }
+
 
 .celular{
     color: black;
