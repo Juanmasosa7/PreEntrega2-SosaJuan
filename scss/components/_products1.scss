@@ -1,31 +1,28 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/variables';
 /* Tazas */
 .grid-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #ededed;
-    border-radius: 4px;
+    @extend %flexbox;
+    background-color: nth($colores, 14);
+    border-radius: nth($radius, 3);
     transition: transform 0.3s ease-in-out;
-
-}
-
-
-.grid-item:hover{
-    filter: opacity(0.9);
-    transform: scale(1.05);
+    &:hover{
+        filter: opacity(0.9);
+        transform: scale(1.05);
+    }
 }
 
 .grid-container{
-    background-color: #f5f5dc;
+    background-color: nth($colores, 13);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-auto-rows: minmax(200px, auto);
     gap: 10px;
-    padding: 20px;
+    padding: nth($padding, 1);
 }
 
 .titulo-tazas{
-    background-color: #f5f5dc;
-    padding: 25px;
+    background-color: nth($colores, 13);
+    padding: nth($padding, 10);
 }

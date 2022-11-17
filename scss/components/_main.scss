@@ -1,0 +1,51 @@
+@import '../base/listas';
+@import '../base/mixins';
+@import '../base/variables';
+
+/* Segunda forma para linkear Google Fonts (se utilizo para toda la pagina) */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200&display=swap');
+
+/* general */
+*{
+    padding: nth($padding, 6);
+}
+
+body{
+    font-family:'Inter Tight', sans-serif;
+}
+
+h1{ font-size: nth($font-size, 10);}
+h2{font-size: nth($font-size, 11);
+    margin: 10px;
+    text-align: $alineacion;
+}
+h3{font-size: nth($font-size, 12);
+text-align: $alineacion;
+}
+p{font-size: nth($font-size, 13);
+    justify-content: center;
+}
+a{  text-decoration: $deco;
+    text-align: $alineacion;
+}
+li{font-size: nth($font-size, 14);}
+
+ul{
+    li{
+        list-style-type: none;
+        text-align: $alineacion;
+        padding: nth($padding, 1);
+        font-size: nth($font-size, 5);
+        text-decoration: $deco;
+    }
+}
+
+button{
+    font-size: nth($font-size, 13);
+    font-weight:400;
+    padding: nth($padding, 9);
+    @include boton (1px solid, 5px);
+    box-shadow: 2px 2px 5px;
+    color: nth($colores, 9);
+    background-color: nth($colores, 11);
+}

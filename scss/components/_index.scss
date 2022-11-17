@@ -1,3 +1,5 @@
+@import '../base/listas';
+@import '../base/variables';
 /* index.html */
 
 #principal{
@@ -6,33 +8,32 @@
     overflow: hidden;
     position:relative;
     margin: 0px 0px 0px 0px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        font-size: nth($font-size, 6);
+        color: nth($colores, 2);
+        position: absolute;
+        text-align: $alineacion;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px nth($colores, 10);
+    }
 }
 
-#principal img{
-    width: 100%;
-    height: 100%;
-}
-
-#principal h1{
-    font-size: 3.5rem;
-    color: white;
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0 0 8px rgba(0,0,0,0.8);
-}
 
 #productos{
-    background-color: #f5f5dc;
+    background-color: nth($colores, 13);
     margin: 0;
-    padding: 0;
+    padding: nth($padding, 6);
 }
 
 .titulo-product{
-    text-align: center;
-    padding: 60px;
+    text-align: $alineacion;
+    padding: nth($padding, 7);
 }
 
 .espaciado{
@@ -40,12 +41,11 @@
 }
 
 #color-link{
-    color: rgb(163, 92, 230);
-    text-decoration: none;
-}
-
-#color-link:hover{
-    color: blueviolet;
+    color: nth($colores, 8);
+    text-decoration: $deco;
+    &:hover{
+        color: nth($colores, 3);
+    }
 }
 
 #ul{
@@ -53,17 +53,17 @@
 }
 
 .imagenes-product{
-    border-radius: 20px;
+    border-radius: nth($radius, 1);
     transition: all 0.7s;
-}
-.imagenes-product:hover{
-    transform: translateY(-12px);
+    &:hover{
+        transform: translateY(-12px);
+    }
 }
 
 #cuidado{
-    background-color: #f5f5dc;
-    color: black;
-    text-align: center;
-    padding: 160px 100px;
+    background-color: nth($colores, 13);
+    color: nth($colores, 4);
+    text-align: $alineacion;
+    padding: nth($padding, 8);
     margin: 0;
 }

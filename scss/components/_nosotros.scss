@@ -1,6 +1,8 @@
+@import '../base/listas';
+@import '../base/variables';
 /* nosotros */
 #somos{
-    text-align: center;
-    padding: 50px 12px;
-    background-color: #f5f5dc;
+    text-align: $alineacion;
+    padding: nth($padding, 3);
+    background-color: nth($colores, 13);
 }

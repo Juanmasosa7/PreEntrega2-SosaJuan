@@ -1,20 +1,21 @@
+@import '../base/listas';
+@import '../base/variables';
 /* contactos.html */
 #contactos{
-    text-align: center;
-    background-color: #f5f5dc;
-    text-align: center;
-    padding: 50px 12px;
+    text-align: $alineacion;
+    background-color: nth($colores, 13);
+    padding: nth($padding, 3);
     display:flexbox;
     justify-content:space-around;
 }
 
 .redes{
-    padding: 20px;
+    padding: nth($padding, 1);
     margin-bottom: 10px;
 }
 
 #redes-box{
-    padding: 5px;
+    padding: nth($padding, 2);
     justify-content:space-around;
-    font-size: 1em;
+    font-size: nth($font-size, 9);
 }

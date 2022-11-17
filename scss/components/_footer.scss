@@ -1,44 +1,45 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/variables';
 /* footer */
 
 footer{
     width: 100%;
     position:center;
-    padding: 30px 0;
-    background-color: #fdced5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: nth($padding, 4);
+    background-color: nth($colores, 11);
     flex-direction: column;
+    @extend %flexbox;
 }
 
 .logo-footer{
     height: 80px;
     margin-bottom: 1rem;
-    border-radius: 20px;
+    border-radius: nth($radius, 1);
 }
 
 .wrapper, .footer-menu-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flexbox;
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
 
-.wrapper ul li{
-    
-    height: 50px;
-    border-radius: 50px;
-    margin: 1rem;
-    background-size: 40%;
-    float: left;
-    background-repeat: no-repeat;
-}
-
-.wrapper ul li .fa{
-    color: rgb(255, 255, 255);
-    transition: all 0.5s ease;
+.wrapper{
+    ul{
+        li{
+            height: 50px;
+            border-radius: nth($radius, 2);
+            margin: 1rem;
+            background-size: 40%;
+            float: left;
+            background-repeat: no-repeat;
+            .fa{
+                color: nth($colores, 5);
+                transition: all 0.5s ease;
+            }
+        }
+    }
 }
 
 
@@ -46,14 +47,14 @@ footer{
     margin: 1rem 1.5rem;
     cursor: pointer;
     opacity: 0.8;
+    &:hover{
+        opacity: 1;
+    }
 }
 
-.menu-items:hover{
-    opacity: 1;
-}
 
 .celular{
-    color: black;
+    color: nth($colores, 4);
     opacity: 0.7;
-    text-align: center;
+    text-align: $alineacion;
 }

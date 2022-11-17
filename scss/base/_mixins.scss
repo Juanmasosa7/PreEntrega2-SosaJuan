@@ -1,0 +1,5 @@
+@mixin boton($borde, $redondeado) {
+    border: $borde;
+    border-radius: $redondeado;
+}
+
