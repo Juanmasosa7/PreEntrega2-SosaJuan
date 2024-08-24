@@ -14,6 +14,7 @@
 <ul>
   <li>HTML5</li>
   <li>CSS3</li>
+  <li>SCSS</li>
 </ul>
 
 <h3>Herramientas y Librerías:</h3>
