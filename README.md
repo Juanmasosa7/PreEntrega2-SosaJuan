@@ -1,4 +1,4 @@
-<h1> Proyecto Final Coderhouse</h1>
+<h1> Pagina Web Melaquitas</h1>
 
 <h2> Descripción </h2>
 <p> Melaquitas es una pagina web diseñada para la venta de tazas,platitos,etc.</p>
